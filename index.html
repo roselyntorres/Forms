@@ -23,7 +23,7 @@
 <label for="user-pw">Password</label>
 <input type="password" name="user-pw" id="user-pw">
 <br>
-<label for="amount"> How many pattoes do you want?</label>
+<label for="amount"> How many patties do you want?</label>
 <input type="number" name="amount" id="amount" step="1">
 <br>
 <section class="cooked">
@@ -34,9 +34,80 @@
     <span> Well Done</span>
   
 </section>
+<section class="toppings">
+<span>What toppings would you like?</span>
+<br>
+<!---This is where the LETTUCE checkbox goes-->
+<input type="checkbox" id="lettuce" value="lettuce" name="topping" >
 
+<label for="lettuce">:Lettuce</label>
+<!---This is where the TOMATO goes-->
+<input type="checkbox" id="tomato" value="tomato" name="topping" >
+
+<label for="tomato">:Tomato</label>
+<!---This is where the checkbox goes-->
+<input type="checkbox" id="xcheese" value="xcheese" name="topping" >
+
+<label for="cheese">:Extra Cheese</label>
+</section>
+
+
+<section class="cheesy">
+<span>Would you like to add cheese?</span>
+<br>
+<input type="radio" name="cheese" id="yes" value="yes">
+<label for="yes">Yes</label>
+
+<input type="radio" name="cheese" id="no" value="no">
+<label for="yes">No</label>
+
+
+
+</section>
+
+
+
+<section>
+
+<label for="bun"> What type of bun would you like?</label>
+<!-- Dropdown options here -->
+<select name="bun" id="bun">
+<option value="sesame">Seasame</option>
+<option value="potato">Potato</option>
+<option value="Pretel">Pretel</option>
+<option value="Italian">Italian</option>
+<option value="Sourdough">Sourdough</option>
+</select>
+
+</section>
+
+
+<section class="sause-selection">
+  <label for="sauce"> What type of sauce would you like?</label>
+  <input type="text" Lists="sauces" id="sauce" name="sauce">
+
+
+  <datalist id="sauces">
+  <option value="Ketchup">Ketchup</option>
+  <option value="Mayo">mayo</option>
+  <option value="Ranch">Ranch</option>
+  <option value="Hot Sauce">Hot Sauce</option>
+  </datalist>
+</section>
+
+<section class="extra-info">
+<label for="extra"> Anything else you want to add?</label>
+<br>
+<textarea name="extra" id="extra" cols="30" rows="30"></textarea>
+</section>
       </form>
      
     </section>
+<br>
+<section class="submission">
+<input type="submit">
+
+</section>
+
   </body>
 </html>
