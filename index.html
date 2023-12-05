@@ -18,10 +18,10 @@
         <p>Getting info about burgers</p>
         <label for="username">Username</label>
         
-        <input type="text" name="username" value="username">
+        <input type="text" name="username" id="username" required>
 <br>
 <label for="user-pw">Password</label>
-<input type="password" name="user-pw" id="user-pw">
+<input type="password" name="user-pw" id="user-pw" required>
 <br>
 <label for="amount"> How many patties do you want?</label>
 <input type="number" name="amount" id="amount" step="1">
@@ -98,16 +98,17 @@
 <section class="extra-info">
 <label for="extra"> Anything else you want to add?</label>
 <br>
-<textarea name="extra" id="extra" cols="30" rows="30"></textarea>
+<textarea name="extra" id="extra" cols="40" rows="30" placeholder="No thanks, it's perfect!"></textarea>
 </section>
-      </form>
-     
-    </section>
+
 <br>
 <section class="submission">
-<input type="submit">
-
+  <input type="submit">
+  
 </section>
 
+</form>
+
+</section>
   </body>
 </html>
